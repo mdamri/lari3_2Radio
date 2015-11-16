@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/editText"
                 android:text="Ecoutez avec plaisir toutes les stations radio tunisiennes, n'importe quand,n'importe ou et en toute liberté grace à notre application via Internet  "
-                android:textSize="25dp"
+                android:textSize="23dp"
                 android:layout_below="@+id/imageView"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
