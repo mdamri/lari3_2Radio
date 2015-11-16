@@ -25,7 +25,7 @@
                 android:id="@+id/textView"
                 android:layout_alignParentTop="true"
                 android:textColor="#fddc06"
-                android:textSize="30dp"
+                android:textSize="35dp"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal" />
 
@@ -49,7 +49,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:textStyle="bold"
-                android:textColor="#6000d3" />
+                android:textColor="#ffffff" />
 
 
 
