@@ -1,6 +1,6 @@
 package com.app.ppt.yousoft.radiotn;
 /// premiere version
-///checked by Omar
+///checked by jassem
 import android.content.Context;
 import android.content.DialogInterface;
 import android.net.ConnectivityManager;
@@ -16,14 +16,16 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if(!networkcheked()) {
+        if(!networkcheked())
+        {
             new AlertDialog.Builder(this)
                     .setIcon(android.R.drawable.ic_dialog_alert)
                     .setTitle("Attention")
-                    .setMessage("Pas de connexion Internet,Activez une Connexion puis réessayez")
+                    .setMessage("Pas de connexion Internet,Activez une Connexion puis reessayez")
                     .setPositiveButton("Fermer", new DialogInterface.OnClickListener()
                     {
                         @Override
@@ -35,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    private boolean networkcheked() {
+    private boolean networkcheked()
+    {
         ConnectivityManager connectivityManager
                 = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
