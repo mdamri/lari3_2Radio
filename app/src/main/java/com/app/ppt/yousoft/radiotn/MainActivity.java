@@ -1,6 +1,6 @@
 package com.app.ppt.yousoft.radiotn;
 /// premiere version
-///checked by jassem
+///checked by jassem ben ali
 import android.content.Context;
 import android.content.DialogInterface;
 import android.net.ConnectivityManager;
