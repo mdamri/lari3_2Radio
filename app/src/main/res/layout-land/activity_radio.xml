@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:orientation="vertical"
+    	android:background="@drawable/bg6land"
+    	android:id="@+id/RootView"
+    	tools:context=".RadioActivity">
+		
+	<LinearLayout
+	    android:id="@+id/mainLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1" >
+	
+	    <RelativeLayout  android:id="@+id/mainLayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="0.5" >	        
+	        <ImageView
+			    android:id="@+id/stationImageView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+			    android:layout_marginBottom="10dp"
+				android:layout_marginRight="10dp"
+
+				android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true" />
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/mainLayout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.5" >
+
+	        <TextView
+	            android:id="@+id/titleTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:gravity="center_horizontal"
+	            android:minWidth="255dp"
+	            android:text="@string/app_name"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textSize="20sp"
+				android:textColor="#ff0000" />
+
+	        <View
+	            android:id="@+id/view1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dip"
+	            android:layout_below="@+id/titleTextView"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="0dp"
+	            android:layout_marginRight="12dp"
+	            android:background="#555555" />
+
+	        <Button
+	            android:id="@+id/PauseButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/titleTextView"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:background="@drawable/btn_pause"
+	            android:onClick="onClickPauseButton" />
+
+	        <Button
+	            android:id="@+id/PlayButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/titleTextView"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:background="@drawable/btn_play"
+	            android:onClick="onClickPlayButton" />
+
+	        <Button
+	            android:id="@+id/StopButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/adLayout"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignRight="@+id/titleTextView"
+	            android:layout_marginBottom="5dp"
+	            android:background="@drawable/btn_stop"
+	            android:onClick="onClickStopButton" />
+
+	        <Button
+	            android:id="@+id/NextButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:layout_toLeftOf="@+id/StopButton"
+	            android:background="@drawable/btn_next"
+	            android:onClick="onClickNextButton" />
+
+	        <Button
+	            android:id="@+id/PreviousButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginBottom="5dp"
+	            android:layout_toRightOf="@+id/PlayButton"
+	            android:background="@drawable/btn_previous"
+	            android:onClick="onClickPreviousButton" />
+
+			<TextView
+			    android:id="@+id/timeTextView"
+			    android:layout_width="100dp"
+			    android:layout_height="20dp"
+				android:gravity="right"
+			    android:text=""
+			    android:textSize="12sp"
+				android:textColor="#000000"
+				android:layout_alignTop="@+id/view1"
+				android:layout_centerHorizontal="true" />
+
+	        <TextView
+	            android:id="@+id/statusTextView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:text="@string/status_noconnection"
+	            android:textSize="15sp"
+				android:textColor="#000000"
+				android:layout_alignBottom="@+id/quit"
+				android:layout_centerHorizontal="true" />
+
+			<ImageButton
+				android:layout_width="70dp"
+				android:layout_height="70dp"
+				android:id="@+id/quit"
+				android:background="@drawable/shutdown"
+				android:adjustViewBounds="false"
+				android:layout_alignTop="@+id/timeTextView"
+				android:layout_alignParentRight="true" />
+
+			<ImageButton
+				android:layout_width="72dp"
+				android:layout_height="72dp"
+				android:id="@+id/detai"
+				android:layout_below="@+id/view1"
+				android:layout_alignParentLeft="true"
+				android:background="@drawable/details" />
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:gravity="bottom" 
+   		android:layout_weight="0"  	
+   		android:minHeight="35dp"	
+    	android:id="@+id/adLayout" >
+	</LinearLayout>
+</LinearLayout>
