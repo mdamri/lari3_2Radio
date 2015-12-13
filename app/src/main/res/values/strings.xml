@@ -1,6 +1,38 @@
 <resources>
     <string name="app_name">RadioTN</string>
+    <string name="version">1.0</string>
+    <string name="is_display_ad">true</string>
 
-    <string name="hello_world">Hello world!</string>
+
+    <string-array name="station_names">
+        <item>ShemsFM</item>
+        <item>MosaiqueFM</item>
+        <item>ExpressFM</item>
+        <item>CapFM</item>
+        <item>DiwanFM</item>
+        <item>JawharaFM</item>
+        <item>IFM</item>
+    </string-array>
+    <string-array name="station_urls">
+        <item>http://stream6.tanitweb.com/shems</item>
+        <item>http://radio.mosaiquefm.net:8000/mosalive</item>
+        <item>http://stream6.tanitweb.com:80/expressfm</item>
+        <item>http://stream8.tanitweb.com/capfm</item>
+        <item>http://stream8.tanitweb.com/diwanfm</item>
+        <item>http://streaming2.toutech.net:8000/jawharafm</item>
+        <item>http://5.135.138.182:8000/direct</item>
+    </string-array>
+    <string-array name="station_types">
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>
+        <item>mp3</item>
+
+    </string-array>
+
+
     <string name="action_settings">Settings</string>
 </resources>
