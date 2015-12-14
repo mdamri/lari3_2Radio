@@ -18,10 +18,10 @@ public class DetailsActivity extends ListActivity {
     ListView listView;
     ArrayList<RowItem> rowItems;
     EditText st;
-    String[] ractivities={"MosaiqueActivity","","","",""};
-    String[] titles={"Mosaique FM","Radio Sfax","Jawhara FM","Shems FM","Diwan FM"};
-    String[] descriptions={"Tunis","Sfax","Sousse","Tunis","Sfax"};
-    int[] images={com.app.ppt.yousoft.radiotn.R.mipmap.mosaique, com.app.ppt.yousoft.radiotn.R.mipmap.radiosfax, com.app.ppt.yousoft.radiotn.R.mipmap.jawhara, com.app.ppt.yousoft.radiotn.R.mipmap.shems, com.app.ppt.yousoft.radiotn.R.mipmap.diwan};
+    String[] ractivities={"","MosaiqueActivity","","","","","","","","","","","","","",""};
+    String[] titles={"Shems FM","Mosaique FM","Express FM","Cap FM","Diwan FM","Jawhara FM","IFM","Sabra FM","Oasis FM","MFM","Oxygene FM","Ulysse FM","Knooz FM","Radio 6 FM","Twenssa FM","Saraha FM"};
+    String[] descriptions={"Tunis","Tunis","Tunis","Nabeul","Sfax","Sousse","Tunis","Kairouan","Gabès","Sousse","Bizerte","Djerba","Sousse","Tunis","Tunis","Tunis"};
+    int[] images={R.drawable.station_1, R.drawable.station_2, R.drawable.station_3, R.drawable.station_4, R.drawable.station_5,R.drawable.station_6,R.drawable.station_7,R.drawable.station_8,R.drawable.station_9,R.drawable.station_10,R.drawable.station_11,R.drawable.station_12,R.drawable.station_13,R.drawable.station_14,R.drawable.station_15,R.drawable.station_16};
 
 
 
