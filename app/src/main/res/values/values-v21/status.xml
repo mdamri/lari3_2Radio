@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_connecting">Connexion...</string>
+    <string name="status_buffering">Tampon...</string>
+    <string name="status_ready">Prêt..</string>
+    <string name="status_playing">Streaming en cours!!!</string>
+    <string name="status_paused">Pause</string>
+    <string name="status_stopped">Stop</string>
+    <string name="status_error">Erreur Streaming !!!</string>
+    <string name="status_noconnection">Pas De Connexion !!!</string>
+</resources>
