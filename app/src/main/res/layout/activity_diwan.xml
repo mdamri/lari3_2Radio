@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omarreg.fssradio.MosaiqueActivity"
+    android:background="@drawable/bg2">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+        //scrollview me yet7at fih ken child we7ed elli howa houni 7attitou linearlayout vertical w
+        fi westou linearlayouts horizontaux.
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/station_3" />
+
+                //famma difference bin background w src
+
+                <ImageButton
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:id="@+id/callButton"
+                    android:background="@drawable/call" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="242dp"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:text="Une nouvelle station de radio « Radio Diwan» commencera à diffuser à Sfax, demain le 1er octobre 2015, sur des ondes FM à partir de 6h du matin.   « Radio Diwan » diffusera tout au long de la période d’essai, de la musique et des promotions 24h/24 sur la fréquence 91.2 MHz. Sachant que cette nouvelle station est la première radio privée qui sera diffusée à Sfax et qui avait eu le visa juridique le 20 avril 2015."
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:textIsSelectable="false" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:layout_alignBottom="@+id/scrollView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="100dp"
+                    android:src="@drawable/diwan" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
